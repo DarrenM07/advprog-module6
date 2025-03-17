@@ -10,3 +10,6 @@ The `handle_connection` function takes a `TcpStream` as an argument and reads it
 ## Commit 3
 The improvement I made is using an if-else statement to load the page based on the response status.
 ![alt text](/assets/image/commit3.png)
+
+## Commit 4
+The `sleep` version runs slower because the code explicitly instructs the thread to pause for 10 seconds with this line: `thread::sleep(Duration::from_secs(10));`.
